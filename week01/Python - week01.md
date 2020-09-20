@@ -22,7 +22,8 @@
 > %A - 星期几  
 > %p - AM还是PM  
 
-![我的查询运行](https://imgchr.com/i/wTZBwt)  
+![我的查询运行](https://s1.ax1x.com/2020/09/20/wTZBwt.jpg)  
+
 ### if、else、elif
 - if - 赋予一个条件
 - else - 不符合if条件的另一种状况
