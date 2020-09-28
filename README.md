@@ -1,39 +1,42 @@
-# python_learning
+### 标准库、开源模块&自定义模块
+#### - 标准库
+像我们用到的getcwd等的这类指令，它们被称作函数。而这些函数首先会被储存在如os一样的模块里，运用函数我们就需要从模块中调用。就像数以百计的函数组成了数以百计的模块一样，标准库就是各个模块组成的一个合集，它就像是存放着各类书的图书馆一样。
+#### - 开源模块
+模块是包含定义的函数和变量的文件，后续名是 .py。模块分为三种，开源模块是其中一种，也就是不是出自官方而是出自第三方之手的模块组件。
+#### - 自定义模块
+自定义模块就是自己定制的模块，diy产品。
+### Python是一种怎样的语言
+在我看来Python是一种大概可能应该比较容易入门的语言。简洁的代码和其它可以跨平台、方便移植、扩展性很强的属性让Python就像一款“胶水语言”
+### 模块查询
+- import sys - 导入sys模块
+- sys.platform - 查询当前使用平台的名称
+- print（sys.version) - 打印输出当前python版本信息
+- getcwd - 查询当前代码所在文件夹的名称
+- environ - 访问系统的全部环境变量
+- date - 日期
+- today - 今天
+- today().day/month/year - 今天的日月年
+- date.isoformat - 将日期转换成字符串
+- strftime - 大概是指定时间显示的格式吧
+> %H:%M - 24小时制显示  
+> %A - 星期几  
+> %p - AM还是PM  
 
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+![我的查询运行](https://s1.ax1x.com/2020/09/20/wTZBwt.jpg)  
 
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+### if、else、elif
+- if - 赋予一个条件
+- else - 不符合if条件的另一种状况
+- elif - 在赋予了if条件后再新增条件，相当于else if
+### 代码块
+一个模块、一个函数、一个类、一个文件等都是代码块  
+### 迭代
+相当于for循环
+### for循环、range循环
+- for循环 - 循环对象集里的内容
+- range循环 - 给予运行次数范围，指定循环次数
+### random、time模块
+- random模块 - 生成随机数
+> randint - 生成整数随机数
+- time模块
+> sleep - 暂停指定秒数时间
