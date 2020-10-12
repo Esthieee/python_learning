@@ -9,7 +9,7 @@ for name in names:
         renames.append(name)
         num[name] = names.count(name)
     else:
-        print(name)
+        break
 
 print(renames)
 print(num)
