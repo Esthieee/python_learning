@@ -10,7 +10,7 @@ b = [1,2,3]
 ```  
 这样看上去使用copy和用b=a的直接赋值方法差不多，但实际上不同的。  
 - #### 复制与赋值的区别
-```  
+```python   
 # 赋值  
 a = [1,2,3]  
 b = a  
@@ -54,7 +54,7 @@ b = [1,2,3]  # 这时列表b不再像上面一样也跟着被修改了。
 而列表切片是**非破坏性**的，因为从一个现有列表中抽取对象不会改变原来的列表，元数据仍保持不变。  
 
  - 列表切片  
- ```  
+ ```python   
  phrase = "Don't panic!"
 plist = list(phrase)
 print(phrase)
@@ -69,7 +69,7 @@ new_phrase = "on tap"
 ```  
 
 - 方法处理  
-```
+```python 
 phrase = "Don't panic!"
 plist = list(phrase)
 print(phrase)
@@ -90,7 +90,7 @@ new_phrase = "on tap"
 
 ### join  
 将序列中的元素以指定的字符连接生成一个新的字符串  
-```  
+```python   
 # 例  
 str = "-"  
 seq = ("a", "b", "c")  # 字符串序列  
@@ -105,7 +105,7 @@ a-b-c
 ### 元组的基本创建和使用  
 
 ### 本周练习  
-```  
+```python   
 item_list = [('暹罗猫',130),  
              ('狸花猫',13),  
              ('奶牛猫',20),  
