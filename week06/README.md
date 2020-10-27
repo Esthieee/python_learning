@@ -18,16 +18,16 @@
 ### 字典方法  
 |序号|方法|作用|
 |:---:|:---:|:---:|
-|1|radiansdict.clear()|删除字典内所有元素
-|2|radiansdict.copy()|返回一个字典的浅复制|
-|3|radiansdict.fromkeys()|创建一个新字典，以序列seq中元素做字典的键，val为字典所有键对应的初始值|
-|4|radiansdict.get(key, default=None)|返回指定键的值，如果键不在字典中返回 default 设置的默认值|
+|1|dict.clear()|删除字典内所有元素
+|2|dict.copy()|返回一个字典的浅复制|
+|3|dict.fromkeys()|创建一个新字典，以序列seq中元素做字典的键，val为字典所有键对应的初始值|
+|4|dict.get(key, default=None)|返回指定键的值，如果键不在字典中返回 default 设置的默认值|
 |5|key in dict|如果键在字典dict里返回true，否则返回false|
-|6|radiansdict.items()|以列表返回可遍历的(键, 值) 元组数组|
-|7|radiansdict.keys()|返回一个迭代器，可以使用 list() 来转换为列表|
-|8|radiansdict.setdefault(key, default=None)|和get()类似, 但如果键不存在于字典中，将会添加键并将值设为default|
-|9|radiansdict.update(dict2)|把字典dict2的键/值对更新到dict里|
-|10|radiansdict.values()|返回一个迭代器，可以使用 list() 来转换为列表|
+|6|dict.items()|以列表返回可遍历的(键, 值) 元组数组|
+|7|dict.keys()|返回一个迭代器，可以使用 list() 来转换为列表|
+|8|dict.setdefault(key, default=None)|和get()类似, 但如果键不存在于字典中，将会添加键并将值设为default|
+|9|dict.update(dict2)|把字典dict2的键/值对更新到dict里|
+|10|dict.values()|返回一个迭代器，可以使用 list() 来转换为列表|
 |11|pop(key[,default])|删除字典给定键 key 所对应的值，返回值为被删除的值。key值必须给出。 否则，返回default值。|
 |12|popitem()|随机返回并删除字典中的最后一对键和值。|  
 ---  
@@ -91,4 +91,21 @@ for letter in word: #利用迭代计算单词中元音字母出现次数
 
 for k, v in sorted(found.items()): #利用循环迭代访问数据
     print(k,'出现了',v,'次')
+```  
+#### 3.  
+```python
+vowels = set('aeiou') #用set函数创建集合
+word = input("请输入单词：") #为word变量赋值
+
+u = vowels.union(set(word)) #将word中的值转换为一个字母对象集合（在转换中会删除所有重复对象）
+
+u_list = sorted(list(u)) #用sorted和list函数将集合转换为有序列表
+
+d = vowels.difference(set(word)) #用difference函数将vowels与set(word)中的对象进行比较，再将两者不重复的对象加入到d集合中
+
+i = vowels.intersection(set(word)) #intersection将两者中相同的对象加入到i集合中
+
+found = vowels.intersection(set(word))
+for vowel in found:
+    print(vowel)
 ```
