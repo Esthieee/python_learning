@@ -56,7 +56,7 @@ while True: #设置while循环
     count = count + 1 #每次循环count数加一
 ```  
 ---  
-### 课本联系  
+### 课本练习  
 #### 1.
 ```python
 found = {} #建立一个空字典
@@ -108,4 +108,80 @@ i = vowels.intersection(set(word)) #intersection将两者中相同的对象加�
 found = vowels.intersection(set(word))
 for vowel in found:
     print(vowel)
+```
+#### 4. 
+```python
+# 在jupyter notebook中已经运行得到的数据
+results =[{'faceId': '360fc287-bc83-439c-b5ca-da9a0a9c226c',
+  'faceRectangle': {'top': 92, 'left': 207, 'width': 54, 'height': 54},
+  'faceAttributes': {'smile': 0.831,
+   'gender': 'male',
+   'age': 42.0,
+   'glasses': 'ReadingGlasses',
+   'hair': {'bald': 0.03,
+    'invisible': False,
+    'hairColor': [{'color': 'black', 'confidence': 1.0},
+     {'color': 'brown', 'confidence': 0.94},
+     {'color': 'gray', 'confidence': 0.87},
+     {'color': 'other', 'confidence': 0.22},
+     {'color': 'blond', 'confidence': 0.01},
+     {'color': 'red', 'confidence': 0.01},
+     {'color': 'white', 'confidence': 0.0}]}}},
+ {'faceId': '64eb7f8f-7961-4dd5-8dc4-aed1716e4e0a',
+  'faceRectangle': {'top': 136, 'left': 414, 'width': 45, 'height': 45},
+  'faceAttributes': {'smile': 1.0,
+   'gender': 'female',
+   'age': 15.0,
+   'glasses': 'NoGlasses',
+   'hair': {'bald': 0.15,
+    'invisible': False,
+    'hairColor': [{'color': 'black', 'confidence': 1.0},
+     {'color': 'brown', 'confidence': 0.85},
+     {'color': 'gray', 'confidence': 0.42},
+     {'color': 'other', 'confidence': 0.26},
+     {'color': 'blond', 'confidence': 0.15},
+     {'color': 'red', 'confidence': 0.02},
+     {'color': 'white', 'confidence': 0.0}]}}},
+ {'faceId': '8f925af7-320b-4331-8f5f-2c579069c24b',
+  'faceRectangle': {'top': 132, 'left': 336, 'width': 45, 'height': 45},
+  'faceAttributes': {'smile': 1.0,
+   'gender': 'female',
+   'age': 35.0,
+   'glasses': 'NoGlasses',
+   'hair': {'bald': 0.03,
+    'invisible': False,
+    'hairColor': [{'color': 'black', 'confidence': 1.0},
+     {'color': 'brown', 'confidence': 0.84},
+     {'color': 'other', 'confidence': 0.46},
+     {'color': 'gray', 'confidence': 0.28},
+     {'color': 'red', 'confidence': 0.04},
+     {'color': 'blond', 'confidence': 0.02},
+     {'color': 'white', 'confidence': 0.0}]}}},
+          ]
+
+face = {
+    'person1' : {
+    '性别' : results[0]['faceAttributes']['gender'],
+    '年龄' : results[0]['faceAttributes']['age'],
+    '是否戴眼镜' : results[0]['faceAttributes']['glasses'],
+    '头发颜色' : results[0]['faceAttributes']['hair']['hairColor'][0]['color'],
+    '微笑指数' : results[0]['faceAttributes']['smile'],
+    },
+    'person2' : {
+    '性别' : results[1]['faceAttributes']['gender'],
+    '年龄' : results[1]['faceAttributes']['age'],
+    '是否戴眼镜' : results[1]['faceAttributes']['glasses'],
+    '头发颜色' : results[1]['faceAttributes']['hair']['hairColor'][0]['color'],
+    '微笑指数' : results[1]['faceAttributes']['smile'],   
+    },
+    'person3' : {
+    '性别' : results[2]['faceAttributes']['gender'],
+    '年龄' : results[2]['faceAttributes']['age'],
+    '是否戴眼镜' : results[2]['faceAttributes']['glasses'],
+    '头发颜色' : results[2]['faceAttributes']['hair']['hairColor'][0]['color'],
+    '微笑指数' : results[2]['faceAttributes']['smile'],
+    },
+}
+
+print(face)
 ```
